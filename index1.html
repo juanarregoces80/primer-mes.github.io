@@ -1,91 +1,92 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Almas Gemelas - Libro de Amor</title>
-<style>
-  body {
-    font-family: 'Georgia', serif;
-    background: #f2efe9;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  .book-container {
-    width: 800px;
-    max-width: 90vw;
-    background: #fffdf8;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    border-radius: 12px;
-    padding: 40px 60px;
-    box-sizing: border-box;
-    position: relative;
-  }
-  h1, h2 {
-    font-weight: normal;
-    color: #6b4f4f;
-  }
-  h1 {
-    font-size: 2.4em;
-    margin-bottom: 8px;
-  }
-  h2 {
-    font-size: 1.6em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #cfa6a6;
-    padding-bottom: 8px;
-  }
-  .content {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #4a3b3b;
-    white-space: pre-line;
-  }
-  .poem {
-    font-style: italic;
-    margin-top: 25px;
-    background: #f8f3f0;
-    padding: 18px 24px;
-    border-left: 5px solid #cfa6a6;
-    border-radius: 6px;
-    color: #7a5c5c;
-  }
-  .nav-buttons {
-    position: absolute;
-    bottom: 30px;
-    width: calc(100% - 120px);
-    display: flex;
-    justify-content: space-between;
-  }
-  button {
-    background: #cfa6a6;
-    border: none;
-    color: #fff;
-    padding: 12px 24px;
-    font-size: 1em;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  button:disabled {
-    background: #e8d6d6;
-    cursor: not-allowed;
-  }
-  button:hover:not(:disabled) {
-    background: #b07d7d;
-  }
-  footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 0.9em;
-    color: #bba9a9;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Almas Gemelas - Libro de Amor</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #f2efe9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .book-container {
+      width: 800px;
+      max-width: 90vw;
+      background: #fffdf8;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      padding: 40px 60px;
+      box-sizing: border-box;
+      position: relative;
+    }
+    h1, h2 {
+      font-weight: normal;
+      color: #6b4f4f;
+    }
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 1.6em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #cfa6a6;
+      padding-bottom: 8px;
+    }
+    .content {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #4a3b3b;
+      white-space: pre-line;
+    }
+    .poem {
+      font-style: italic;
+      margin-top: 25px;
+      background: #f8f3f0;
+      padding: 18px 24px;
+      border-left: 5px solid #cfa6a6;
+      border-radius: 6px;
+      color: #7a5c5c;
+    }
+    .nav-buttons {
+      position: absolute;
+      bottom: 30px;
+      width: calc(100% - 120px);
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      background: #cfa6a6;
+      border: none;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:disabled {
+      background: #e8d6d6;
+      cursor: not-allowed;
+    }
+    button:hover:not(:disabled) {
+      background: #b07d7d;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #bba9a9;
+    }
+  </style>
 </head>
 <body>
 
@@ -103,181 +104,62 @@
 
 <footer>Creado con ❤️ para mi mona especial</footer>
 
+<!-- 🎵 Música de fondo automática -->
+<audio autoplay loop hidden>
+  <source src="musica.mp3" type="audio/mpeg">
+  Tu navegador no soporta el audio HTML5.
+</audio>
+
 <script>
   const pages = [
     {
       title: "Parte 1: La primera mirada (16/06/2025)",
-      content: `Era un día cualquiera, de esos que parecen no tener nada especial, cuando el destino decidió jugar su mejor carta. En medio del bullicio y la rutina, dos almas sin saberlo se encontraron por primera vez. Ella estaba distraída, pensando en mil cosas, y él simplemente caminaba sin rumbo fijo, como si buscara algo que no sabía qué era.
-
-Sus ojos se cruzaron como un rayo que atraviesa la tormenta, y en ese instante el mundo pareció detenerse. No fue una chispa que estalló ni un fuego que ardió con prisa, sino una llama lenta y persistente que empezó a crecer en silencio.
-
-Ambos sintieron un extraño calor, una sensación que ni las palabras podían describir. No fue amor a primera vista, no fue un flechazo rápido. Fue algo más profundo: un reconocimiento, como si se hubieran estado esperando toda la vida sin saberlo.
-
-Ella sintió que su corazón latía un poco más fuerte, y él percibió un extraño vacío que ahora parecía llenarse. Fue un momento breve, casi imperceptible para quienes los rodeaban, pero para ellos fue el principio de todo.`,
-      poem: `En el ruido del mundo, un susurro callado,  
-dos miradas que se encuentran, destino sellado.  
-No es prisa ni tormenta, es un pulso pausado,  
-un lazo invisible, un camino trazado.
-
-No hay palabras que expliquen, ni gestos que definan,  
-solo un instante eterno, donde el alma camina.  
-Es la chispa del alma, que sin prisa germina,  
-dos corazones abiertos, que el tiempo encamina.
-
-Un roce de miradas, un silencio compartido,  
-el inicio de un viaje, de un amor decidido.  
-No fue casualidad, fue destino tejido,  
-dos almas gemelas, un lazo unido.`
+      content: `Era un día cualquiera, de esos que parecen no tener nada especial, cuando el destino decidió jugar su mejor carta...`,
+      poem: `En el ruido del mundo, un susurro callado,...`
     },
     {
       title: "Parte 2: El Mes de Amor Acelerado",
-      content: `Lo que para muchos es un lento caminar, para él fue un salto profundo y apasionado. En treinta días, cada pensamiento, cada emoción, cada deseo se aceleró como si el tiempo tuviera prisa. Él no solo veía en ella una persona, sino un universo entero que deseaba conocer y proteger.
-
-No se trataba de un amor superficial o de esos cuentos de hadas con finales perfectos; era real, con sus imperfecciones y desafíos, pero con la certeza de querer intentarlo, de crecer juntos en cada paso.
-
-Cada conversación, cada risa, cada silencio compartido, construía un puente entre dos almas que ansiaban encontrarse. Él sentía que este amor era único, tan fuerte que incluso la distancia o los días difíciles no podían apagar su llama.`,
-      poem: `Amar en un mes, lo que otros no logran en años,  
-sentir en un instante, los más profundos daños.  
-No es prisa ni locura, es un fuego que arde,  
-un viaje sin pausa, donde el alma no tarde.
-
-Cada día un descubrimiento, cada noche una esperanza,  
-no importa el pasado, ni la distancia.  
-Es un amor que crece, que lucha, que aprende,  
-una historia de vida que nunca se rinde.
-
-No es perfecto, lo sabe, no es siempre fácil,  
-pero en cada caída, el amor es un ágil  
-abrazo que cura, que invita a volver,  
-a ser mejores, juntos, sin miedo a perder.`
+      content: `Lo que para muchos es un lento caminar, para él fue un salto profundo y apasionado...`,
+      poem: `Amar en un mes, lo que otros no logran en años,...`
     },
     {
       title: "Parte 3: Los Retos y las Imperfecciones",
-      content: `No todo fue un camino de rosas. Como toda relación verdadera, enfrentaron momentos difíciles. Malentendidos, dudas, temores. Pero fue precisamente en esas pruebas donde aprendieron a escucharse, a apoyarse y a crecer.
-
-Cada obstáculo era una oportunidad para ser mejores, para fortalecer ese vínculo que el destino les había otorgado. Porque amar no es solo gozar los momentos felices, sino también superar juntos las tormentas.
-
-Había días en que el cansancio pesaba, en que las palabras se atoraban, en que el miedo a perder lo construido se hacía presente. Pero decidieron apostar por ese amor imperfecto, con la firme voluntad de caminar de la mano, paso a paso.`,
-      poem: `Amar no es solo sol, también es tormenta,  
-es encontrar en la sombra la fuerza que alienta.  
-No siempre es fácil, ni siempre es brillante,  
-pero es lucha constante, es fuego constante.
-
-Cada lágrima caída, cada palabra herida,  
-es la semilla nueva que alimenta la vida.  
-Porque amar es aceptar, lo bueno y lo malo,  
-es construir con cuidado, un futuro sin fallo.
-
-No hay amor sin lucha, ni victoria sin dolor,  
-pero en cada batalla florece el amor.  
-Dos almas imperfectas, que buscan la luz,  
-que en cada caída, más fuerte se ven a la cruz.`
+      content: `No todo fue un camino de rosas. Como toda relación verdadera, enfrentaron momentos difíciles...`,
+      poem: `Amar no es solo sol, también es tormenta,...`
     },
     {
       title: "Parte 4: El Crecer Juntos",
-      content: `Cada mañana, al despertar, ambos decidían que ese día sería una oportunidad para crecer, para acercarse más, para amarse más sinceramente. No importaba lo difícil que fuera el camino, lo esencial era avanzar, aprender y perdonar.
-
-El amor se convirtió en un compromiso silencioso pero poderoso, en un pacto de almas para apoyarse, para impulsarse a ser la mejor versión de sí mismos. En ese proceso, descubrieron que el verdadero amor no es una perfección estática, sino un movimiento constante.
-
-Descubrieron también la belleza de las pequeñas cosas: una sonrisa inesperada, un abrazo cálido, una palabra de aliento. Fue en esos detalles donde hallaron la magia diaria que los mantenía unidos.`,
-      poem: `Cada día un paso, una nueva promesa,  
-una mano extendida, una dulce certeza.  
-No es un camino recto, ni una senda sin fin,  
-es un baile constante, donde crece el jardín.
-
-Amar es aprender, es caer y levantarse,  
-es dar sin medida, es también alcanzarse.  
-En cada instante juntos, en cada amanecer,  
-se construye el amor, se decide creer.
-
-No hay perfección absoluta, ni un destino marcado,  
-solo dos almas que caminan, unidas, lado a lado.  
-Crecer, cambiar, abrazar lo nuevo,  
-hacer del amor, el más bello empeño.`
+      content: `Cada mañana, al despertar, ambos decidían que ese día sería una oportunidad para crecer...`,
+      poem: `Cada día un paso, una nueva promesa,...`
     },
     {
       title: "Parte 5: La Oficialización del Amor (24/06/2025)",
-      content: `Después de meses de crecimiento y aprendizaje, llegó el día esperado. El 24 de junio de 2025, frente a sus amigos, familia y sus propios corazones, hicieron oficial ese amor que había nacido en un instante pero crecido con los días.
-
-No necesitaban promesas grandiosas ni grandes gestos. Lo único que importaba era la verdad de lo que sentían y la certeza de que querían seguir construyendo su camino juntos.
-
-Ese día sellaron con una mirada y un abrazo la decisión de estar uno para el otro, de ser equipo, refugio y hogar. Sabían que el camino no sería siempre fácil, pero también que ese amor valía cada esfuerzo.`,
-      poem: `Un día marcado en el alma, una fecha sin final,  
-un pacto de dos vidas, un amor real.  
-No es solo un papel, ni una palabra dicha,  
-es la fuerza del alma, la historia vivida.
-
-Frente al mundo y al tiempo, sin miedo ni condición,  
-declaran su amor, sincera emoción.  
-No es un cuento perfecto, ni un destino sellado,  
-es un viaje conjunto, un amor entregado.`
+      content: `Después de meses de crecimiento y aprendizaje, llegó el día esperado...`,
+      poem: `Un día marcado en el alma, una fecha sin final,...`
     },
     {
       title: "Parte 6: Los Sueños Compartidos",
-      content: `Con el amor ya declarado y fortalecido, comenzaron a soñar juntos. Los planes dejaron de ser solo individuales y pasaron a ser proyectos compartidos.
-
-Soñaron con una casa llena de risas, con viajes, con desafíos laborales, con la creación de recuerdos imborrables. Pero también con la fuerza de mantenerse unidos en los días grises, en los momentos de incertidumbre.
-
-Cada sueño, por pequeño que fuera, se convirtió en un ladrillo más para construir su historia y su futuro. Los sueños eran el motor que los impulsaba, el faro que los guiaba en medio de la realidad.`,
-      poem: `Dos almas que sueñan, dos caminos que se cruzan,  
-una vida que se crea, una esperanza que no rehúsa.  
-Construir juntos un mundo, un refugio, un hogar,  
-donde el amor sea semilla que no deje de brotar.
-
-No importa lo incierto, ni lo difícil que sea,  
-porque el sueño compartido todo lo recrea.  
-Es un faro que brilla, que nunca se apaga,  
-es el motor del alma, es la llama que halaga.`
+      content: `Con el amor ya declarado y fortalecido, comenzaron a soñar juntos...`,
+      poem: `Dos almas que sueñan, dos caminos que se cruzan,...`
     },
     {
       title: "Parte 7: La Cotidianidad con Amor",
-      content: `No solo los grandes momentos definían su amor, sino la rutina compartida: el café por la mañana, las charlas al atardecer, los silencios cómodos. El amor se hizo presente en cada gesto simple y sincero.
-
-Aprendieron a valorar lo cotidiano, a encontrar en la rutina motivos para sonreír y agradecer. Fue en la simplicidad donde hallaron la grandeza del amor.`,
-      poem: `No es en las grandes gestas, ni en promesas lejanas,  
-es en el día a día, en las horas tempranas.  
-En un café compartido, en una mirada sincera,  
-el amor se construye, y la vida se espera.
-
-Es el abrazo breve, la palabra justa,  
-es la compañía que no se desgasta.  
-Amar es encontrar, en lo simple y lo real,  
-un motivo eterno, un amor vital.`
+      content: `No solo los grandes momentos definían su amor, sino la rutina compartida...`,
+      poem: `No es en las grandes gestas, ni en promesas lejanas,...`
     },
     {
       title: "Parte 8: Las Promesas No Escritas",
-      content: `No hicieron pactos escritos ni promesas rimbombantes. Su compromiso era silencioso, hecho con acciones, con respeto y cariño. Sabían que cada día era una nueva oportunidad para demostrar ese amor sin necesidad de grandes palabras.
-
-El compromiso estaba en apoyarse, en escucharse, en respetar sus tiempos y espacios. Era un amor libre pero firme, un vínculo creado con el alma.`,
-      poem: `No hay pergaminos, ni juramentos sin fin,  
-solo actos pequeños que vienen de dentro de mí.  
-Es cuidarte en silencio, es darte mi verdad,  
-es caminar a tu lado, sin prisa ni vanidad.
-
-Es ser tu refugio, tu calma y tu paz,  
-es amarte sin miedo, en cada paso atrás.  
-No necesito promesas, ni palabras al viento,  
-porque el amor verdadero vive en el sentimiento.`
+      content: `No hicieron pactos escritos ni promesas rimbombantes. Su compromiso era silencioso...`,
+      poem: `No hay pergaminos, ni juramentos sin fin,...`
     },
     {
       title: "Parte 9: El Amor que Sigue",
-      content: `Mirando hacia el futuro, saben que el camino será largo y lleno de sorpresas. Pero también que mientras estén juntos, podrán enfrentar cualquier cosa.
-
-El amor es una historia en construcción, un viaje que no termina sino que se reinventa día a día.`,
-      poem: `El camino es largo, el horizonte incierto,  
-pero juntos avanzamos, con amor y con esfuerzo.  
-Cada paso es historia, cada día es creación,  
-dos almas que caminan, unidas en canción.
-
-No importa lo que venga, ni el tiempo ni el lugar,  
-porque el amor es la fuerza que siempre va a quedar.  
-Dos almas gemelas, en viaje sin final,  
-una historia de vida, un amor real.`
+      content: `Mirando hacia el futuro, saben que el camino será largo y lleno de sorpresas...`,
+      poem: `El camino es largo, el horizonte incierto,...`
     }
   ];
 
   let currentPage = 0;
-
   const titleEl = document.getElementById('page-title');
   const contentEl = document.getElementById('page-content');
   const prevBtn = document.getElementById('prev-btn');
@@ -287,7 +169,6 @@ una historia de vida, un amor real.`
     const page = pages[index];
     titleEl.textContent = page.title;
     contentEl.innerHTML = page.content.replace(/\n/g, '<br>') + `<div class="poem">${page.poem.replace(/\n/g, '<br>')}</div>`;
-
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === pages.length - 1;
   }
